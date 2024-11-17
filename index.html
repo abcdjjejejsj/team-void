@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PayKeeper</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">PayKeeper</div>
+    <nav>
+      <ul>
+        <li><a href="#" class="nav-link" id="home-link">Home</a></li>
+        <li><a href="feature.html" class="nav-link">Features</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="signin.html" class="nav-link">Sign In</a></li>
+        <li><a href="signup.html" class="nav-link">Sign Up</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+  
+
+  <section class="hero">
+    <h1 id="hed">PayKeeper</h1>
+    <p>Your Financial Bridge for Borrowing, Lending, and Clearing Debts</p>
+    <a href="signup.html"><button class="btn">Get Started</button></a>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h2 style="text-align: center; font-size: 36px; font-weight: bold; color: #0056b3;">Our Services</h2>
+      <p style="text-align: center; font-size: 18px; color: #666;">What PayKeeper offers to make your financial management easier.</p>
+
+      <div class="row">
+        <!-- Card 1: Lend Money -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <div class="card" style="border: none; border-radius: 15px; overflow: hidden; background-color: #ffffff; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+              <div class="card-body" style="text-align: center; padding: 40px; position: relative;">
+                <img src="images/lend_icon.jfif" alt="Lend Money" style="width: 100px; margin-bottom: 20px;">
+                <h4 style="font-size: 24px; color: #0056b3; font-weight: bold;">Lend Money</h4>
+                <p style="color: #666;">Easily lend money to trusted individuals and track payments seamlessly.</p>
+                <div class="overlay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Clear Debt -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <div class="card" style="border: none; border-radius: 15px; overflow: hidden; background-color: #ffffff; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+              <div class="card-body" style="text-align: center; padding: 40px; position: relative;">
+                <img src="images/debt.webp" alt="Clear Debt" style="width: 100px; margin-bottom: 20px;">
+                <h4 style="font-size: 24px; color: #0056b3; font-weight: bold;">Clear Debt</h4>
+                <p style="color: #666;">Keep track of your debts and clear them easily with our tools.</p>
+                <div class="overlay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Borrow Money -->
+        <div class="col-md-4">
+          <div class="service-card">
+            <div class="card" style="border: none; border-radius: 15px; overflow: hidden; background-color: #ffffff; transition: transform 0.3s, box-shadow 0.3s; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);">
+              <div class="card-body" style="text-align: center; padding: 40px; position: relative;">
+                <img src="images/borrow.png" alt="Borrow Money" style="width: 100px; margin-bottom: 20px;">
+                <h4 style="font-size: 24px; color: #0056b3; font-weight: bold;">Borrow Money</h4>
+                <p style="color: #666;">Access loans quickly with low interest rates and flexible repayment options.</p>
+                <div class="overlay"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact1">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need assistance, feel free to reach out to us!</p>
+    <div class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit" class="send">Send Message</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 PayKeeper. All rights reserved.</p>
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+    </ul>
+  </footer>
+ 
+  <script src="scripts/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('home-link').addEventListener('click', function (e) {
+    e.preventDefault();  // Prevent default anchor behavior
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'  // Smooth scrolling
+    });
+  });
+});
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,151 @@
+/* features.css */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9; /* Light beige background */
+    color: #2bff00; /* Dark text for readability */
+}
+
+header {
+    background-color: #2C3E50; /* Deep green for navbar */
+}
+
+.navbar {
+    padding: 15px 20px;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin-left: 20px;
+}
+
+.navbar-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600; /* Bold links */
+    transition: color 0.3s; /* Transition for links */
+}
+
+.navbar-menu a:hover {
+    color: #1ABC9C; /* Hover color for links */
+}
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #1ABC9C; /* Soft green for hero section */
+    color: white; /* White text in hero */
+}
+
+.hero h1 {
+    font-size: 2.8em; /* Large heading */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+.hero p {
+    font-size: 1.2em; /* Slightly larger paragraph text */
+    max-width: 600px; /* Limit width for better readability */
+    margin: auto; /* Center paragraph */
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    flex-wrap: wrap; /* Allow cards to wrap */
+    background-color: #FFFFFF; /* White background for features */
+    border-radius: 10px; /* Rounded corners for features section */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.feature-card {
+    background-color: #FFFFFF; /* White card background */
+    border-radius: 10px; /* Rounded corners */
+    width: 30%;
+    margin: 15px; /* Margin for spacing */
+    padding: 20px; /* Padding inside card */
+    text-align: center; /* Center text in cards */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Card shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.feature-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.feature-icon {
+    width: 100px; /* Increased icon size */
+    height: 100px;
+    margin-bottom: 15px; /* Space between icon and text */
+}
+
+.features h3 {
+    margin: 10px 0; /* Space above and below heading */
+    font-size: 1.5em; /* Heading size */
+    color: #2C3E50; /* Feature heading color */
+}
+
+.cta {
+    text-align: center;
+    padding: 60px 20px; /* Increased padding for CTA */
+    background-color: #2C3E50; /* Deep green background for CTA */
+    color: white; /* CTA text color */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.cta h2 {
+    margin-bottom: 20px; /* Space below heading */
+    font-size: 2em; /* Larger heading for CTA */
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #1ABC9C; /* Soft green button background */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 1.2em; /* Larger button text */
+    transition: background-color 0.3s, transform 0.3s; /* Button hover effect */
+}
+
+.cta-button:hover {
+    background-color: #0883fd; /* Darker button color on hover */
+    transform: scale(1.05); /* Slightly increase button size */
+}
+
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #343a40; /* Dark footer background */
+    color: white; /* Footer text color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .feature-card {
+        width: 100%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Add margin for spacing */
+    }
+
+    .hero h1 {
+        font-size: 2.2em; /* Adjust heading size for smaller screens */
+    }
+
+    .hero p {
+        font-size: 1em; /* Adjust paragraph size */
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - PayKeeper</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">PayKeeper</div>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="signin.html" id="sign-out">Sign Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Welcome, <span id="userName">User</span>!</h2>
+
+        <div class="user-info">
+            <p>Email: <span id="userEmail">user@example.com</span></p>
+            <p>Mobile: <span id="userMobile">1234567890</span></p>
+            <p id="userShopName" style="display: none;">Shop Name: <span id="shopName">Shop XYZ</span></p>
+        </div>
+
+        <h3>Transaction History</h3>
+        <div class="transaction-form">
+            <label for="person-name">Person's Name:</label>
+            <input type="text" id="person-name" placeholder="Enter name">
+            <label for="transaction-type">Transaction Type:</label>
+            <select id="transaction-type">
+                <option value="give">Give Money</option>
+                <option value="take">Take Money</option>
+            </select>
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+            <label for="transaction-date">Date:</label>
+            <input type="date" id="transaction-date">
+            <button id="add-transaction">Add Transaction</button>
+        </div>
+
+        <h3>Transactions</h3>
+        <table id="transaction-table">
+            <thead>
+                <tr>
+                    <th>Person</th>
+                    <th>Type</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic transactions will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 PayKeeper. All rights reserved.</p>
+    </footer>
+</body>
+</html>
